@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3701436365286759963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3770802397716053964}
+  - component: {fileID: 1744072223178679529}
+  m_Layer: 0
+  m_Name: Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3770802397716053964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701436365286759963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744072223178679529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701436365286759963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2b7098522ce4d4eb37f54294bcb2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 0}
+  _platformPrefab: {fileID: 763512293734960365, guid: 3e4ff42fafcb5284c85b3ebb862865b9,
+    type: 3}
+  _enemys:
+  - {fileID: 359234344151517003, guid: a46dcdb7cbb6ceb488a749300fe6e6d1, type: 3}
+  - {fileID: 359234344151517003, guid: a46dcdb7cbb6ceb488a749300fe6e6d1, type: 3}
+  - {fileID: 2438358150456523396, guid: 3239bed07b2409b49a37b754ae0ee67a, type: 3}
+  - {fileID: 5259716577437635639, guid: 5c4c5a09ad84ef34f8bab5f9a30b3897, type: 3}
+  - {fileID: 2336795783931895631, guid: 4193a12b34376cc4e8b0e9d999abb1bf, type: 3}
+  - {fileID: 385708736198567138, guid: ff2a57f41fc5601419732dd726c7953d, type: 3}
+  _floorHeight: 2
