@@ -697,7 +697,6 @@ GameObject:
   - component: {fileID: 738724787}
   - component: {fileID: 738724786}
   - component: {fileID: 738724785}
-  - component: {fileID: 738724784}
   m_Layer: 9
   m_Name: Hero
   m_TagString: Untagged
@@ -788,19 +787,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &738724784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738724780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f778dac66326d94f9afb8dd394b286a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3
 --- !u!114 &738724785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -837,6 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15cbd159e678e8e4db6df75e7704d14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 3
   _tapForce: 5.1
   _startPosition: {x: 0, y: -2, z: 0}
   _extraJumps: 2

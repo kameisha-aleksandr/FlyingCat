@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class BigEnemy : Enemy
 {
-    private SpriteRenderer _spriteRenderer;
     private float _leftPosX, _rightPosX;
     
     void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        var spriteRadius = _spriteRenderer.bounds.size.x / 2;
-        _leftPosX = -Main.camWidth + spriteRadius;
-        _rightPosX = Main.camWidth - spriteRadius;
+        _leftPosX = -Main.camWidth + _enemyWidth / 2;
+        _rightPosX = Main.camWidth - _enemyWidth / 2;
 
         if (Random.value >= 0.5f)
             transform.position = new Vector3(_rightPosX, transform.position.y, transform.position.z);

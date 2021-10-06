@@ -9,15 +9,12 @@ public class FastEnemy : Enemy
     [SerializeField] private GameObject _Attention;
 
     private Vector3 startPosition;
-    private float enemyWidth;
     private Rigidbody2D _rigidbody;
-    private SpriteRenderer _spriteRenderer;
+    
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        enemyWidth = _spriteRenderer.sprite.bounds.size.x * transform.localScale.x;
-        startPosition = new Vector3(-Main.camWidth - enemyWidth, transform.position.y, 0);
+        startPosition = new Vector3(-Main.camWidth - _enemyWidth, transform.position.y, 0);
         transform.position = startPosition;
         StartCoroutine(MoveRight());
     }
@@ -26,7 +23,7 @@ public class FastEnemy : Enemy
     {
         while (true)
         {
-            if (transform.position.x > Main.camWidth + enemyWidth)
+            if (transform.position.x > Main.camWidth + _enemyWidth)
             {
                 transform.position = startPosition;
                 _rigidbody.velocity = Vector2.zero;
